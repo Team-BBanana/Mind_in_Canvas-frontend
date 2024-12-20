@@ -3,7 +3,10 @@ export const ActionMode = {
   ERASE: 'erase',
   SELECT: 'select',
   Board: 'board'
-}
+} as const;
+
+// ActionMode 타입을 선언
+export type ActionMode = typeof ActionMode[keyof typeof ActionMode];
 
 export const FREESTYLE_ELEMENT_CUSTOM_TYPE = {
   IMAGE: 'image',
@@ -17,7 +20,10 @@ export const FREESTYLE_ELEMENT_CUSTOM_TYPE = {
   MULTI_POINT: 'multiPoint',
   WIGGLE: 'wiggle',
   THORN: 'thorn'
-}
+} as const;
+
+// FREESTYLE_ELEMENT_CUSTOM_TYPE 타입을 선언
+export type FreestyleElementCustomType = typeof FREESTYLE_ELEMENT_CUSTOM_TYPE[keyof typeof FREESTYLE_ELEMENT_CUSTOM_TYPE];
 
 export const SHAPE_ELEMENT_CUSTOM_TYPE = {
   SHAPE_LINE: 'shapeLine',
@@ -40,7 +46,10 @@ export const SHAPE_ELEMENT_CUSTOM_TYPE = {
   SHAPE_INFO_OUTLINE: 'shapeInfoOutline',
   SHAPE_HEART: 'shapeHeart',
   SHAPE_ALERT: 'shapeAlert'
-}
+} as const;
+
+// SHAPE_ELEMENT_CUSTOM_TYPE 타입을 선언
+export type ShapeElementCustomType = typeof SHAPE_ELEMENT_CUSTOM_TYPE[keyof typeof SHAPE_ELEMENT_CUSTOM_TYPE];
 
 export const ELEMENT_CUSTOM_TYPE = {
   // freeStyle
@@ -48,4 +57,7 @@ export const ELEMENT_CUSTOM_TYPE = {
 
   // shape
   ...SHAPE_ELEMENT_CUSTOM_TYPE
-}
+} as const;
+
+// ELEMENT_CUSTOM_TYPE 타입을 선언
+export type ElementCustomType = typeof ELEMENT_CUSTOM_TYPE[keyof typeof ELEMENT_CUSTOM_TYPE];
