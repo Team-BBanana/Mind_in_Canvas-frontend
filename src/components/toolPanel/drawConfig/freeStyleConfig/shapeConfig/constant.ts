@@ -10,6 +10,7 @@ import SunIcon from '@/components/icons/shape/sun.svg?react'
 import MoonIcon from '@/components/icons/shape/moon.svg?react'
 import LeafIcon from '@/components/icons/shape/leaf.svg?react'
 import FlowerIcon from '@/components/icons/shape/flower.svg?react'
+import React from "react";
 
 interface ShapeSwitchType {
   type: string

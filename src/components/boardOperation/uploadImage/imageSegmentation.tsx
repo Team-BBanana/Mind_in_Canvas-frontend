@@ -30,6 +30,7 @@ interface IProps {
   cancelUploadImageModal: () => void
 }
 
+
 const SEGMENTATION_STATUS = {
   LOADING: 0,
   NO_SUPPORT_WEBGPU: 1,

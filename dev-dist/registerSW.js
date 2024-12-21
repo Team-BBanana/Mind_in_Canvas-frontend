@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/paint-board/dev-sw.js?dev-sw', { scope: '/paint-board/', type: 'classic' })

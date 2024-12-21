@@ -6,9 +6,9 @@ import ReactCrop, { Crop } from 'react-image-crop'
 import { canvasPreview } from './canvasPreview.ts'
 
 import Mask from '@/components/mask'
-import ImageRotate from '@/components/icons/boardOperation/image-rotate.svg?react'
-import ImageScale from '@/components/icons/boardOperation/image-scale.svg?react'
-import ImageSize from '@/components/icons/boardOperation/image-size.svg?react'
+import ImageRotate from '@/components/icons/boardOperation/image-rotate.svg'
+import ImageScale from '@/components/icons/boardOperation/image-scale.svg'
+import ImageSize from '@/components/icons/boardOperation/image-size.svg'
 
 import 'react-image-crop/dist/ReactCrop.css'
 

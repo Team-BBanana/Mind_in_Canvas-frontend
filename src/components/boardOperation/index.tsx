@@ -105,7 +105,7 @@ const BoardOperation = () => {
             >
               <RedoIcon />
             </div>
-            {[ActionMode.SELECT, ActionMode.Board].includes(mode) && (
+            {[ActionMode.SELECT, ActionMode.Board, ActionMode.DRAW, ActionMode.ERASE].includes(mode) && (
               <>
                 <div
                   onClick={copyObject}

@@ -1,7 +1,27 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "target": "ES2020",                    // target을 ES2020으로 변경 (ESNext는 최신 기능에 맞춰 조정 필요)
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],  // ESNext -> ES2020으로 변경 (호환성 문제 방지)
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,                // esModuleInterop을 true로 변경
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ES2020",                     // ESNext 그대로 유지
+    "moduleResolution": "node16",           // moduleResolution을 node16으로 변경
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,                        // noEmit을 false로 변경 (빌드하려면 false)
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@": ["src"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
+

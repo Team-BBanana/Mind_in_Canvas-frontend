@@ -65,7 +65,7 @@ const FileList: FC<IProps> = ({ updateShow }) => {
           <div className="bg-[#eef1ff] rounded-2xl mt-5 py-2 w-max max-w-full">
             <div className="flex justify-end items-center px-4 pb-2">
               <AddFileIcon
-                className="hover:bg-slate-200 cursor-pointer p-1 rounded-lg w-9 h-9"
+                 className="hover:bg-slate-200 cursor-pointer p-1 rounded-lg w-9 h-9"
                 onClick={addFile}
               />
               <label htmlFor="delete-file-modal">
